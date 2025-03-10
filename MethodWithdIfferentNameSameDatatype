@@ -1,0 +1,18 @@
+class MyClass:
+    def method(self, param1, param2):
+        if param1 == 10 and param2 == 20:
+            print("Method with param1=10 and param2=20")
+        elif param1 == 30 and param2 == 40:
+            print("Method with param1=30 and param2=40")
+        else:
+            print("Invalid parameters")
+
+class MainClass:
+    def main(self):
+        obj = MyClass()
+        obj.method(10, 20)  # Method with param1=10 and param2=20
+        obj.method(30, 40)  # Method with param1=30 and param2=40
+
+# Test
+main_obj = MainClass()
+main_obj.main()
